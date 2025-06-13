@@ -5,7 +5,7 @@ import cors from 'cors';
 const app = express();
 const PORT = 5000;
 
-app.use(cors()); // Allow all origins (adjust in production)
+app.use(cors()); // Allow all origins
 
 // Proxy route
 app.get("/api/quotes", async (req, res) => {
